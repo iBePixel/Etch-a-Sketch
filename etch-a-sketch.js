@@ -12,7 +12,11 @@ function createDiv(){
 function createGrid(count){
     let squares = count * count;
     console.log(squares);
-    
+    if (document.querySelector('cube')){
+        console.log('attempting to delete')
+        container.removeChild("cube");
+    }
+
     for (let i = 0; i < squares; i++){
         createDiv()
     }
