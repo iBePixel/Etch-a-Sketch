@@ -10,11 +10,16 @@ function createDiv(){
 }
 
 function createGrid(count){
+    let div = document.getElementsByClassName("cube");
     let squares = count * count;
     console.log(squares);
-    if (document.querySelector('cube')){
-        console.log('attempting to delete')
-        container.removeChild("cube");
+    console.log(div.length);
+
+    if (div.length != 0){
+        for (let g = 0; g < div.length; g++){
+            container.removeChild(div[0]);
+            console.log(g);
+        }
     }
 
     for (let i = 0; i < squares; i++){
