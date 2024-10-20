@@ -12,13 +12,11 @@ function createDiv(){
 function createGrid(count){
     let div = document.getElementsByClassName("cube");
     let squares = count * count;
-    console.log(squares);
-    console.log(div.length);
+    let divCount = div.length;
 
-    if (div.length != 0){
-        for (let g = 0; g < div.length; g++){
+    if (divCount != 0){
+        for (let g = 0; g < divCount; g++){
             container.removeChild(div[0]);
-            console.log(g);
         }
     }
 
@@ -26,3 +24,5 @@ function createGrid(count){
         createDiv()
     }
 }
+
+createDiv(16);
