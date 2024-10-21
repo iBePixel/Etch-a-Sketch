@@ -1,11 +1,20 @@
 div {
     display: flex;
     flex-wrap: wrap;
+    height: auto;
+    min-height: 100%;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 1px;
 }
 
 .cube {
     border-style: solid;
-    min-height: max-content;
+    height: auto;
+    min-height: 100%;
 }
 
 body {
