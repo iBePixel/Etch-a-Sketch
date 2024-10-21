@@ -1,6 +1,6 @@
 
 const container = document.querySelector("#container");
-
+const cubes = document.querySelector('.cube');
 
 function createDiv(){
     let content = document.createElement("div");
@@ -22,7 +22,11 @@ function createGrid(count){
 
     for (let i = 0; i < squares; i++){
         createDiv()
+        div = document.getElementsByClassName("cube");
+        div[i].style.width = `calc(95% / ${count}`
     }
+    
+    
 }
 
 createGrid(16);

@@ -5,8 +5,6 @@ div {
 
 .cube {
     border-style: solid;
-    width: calc(95% / 10);
-    height: calc(100% / 10);
     min-height: max-content;
 }
 
