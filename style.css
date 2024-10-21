@@ -7,19 +7,20 @@ div {
     flex-wrap: wrap;
 }
 
-.container {
-    width: 500px;
-    height: 500px;
-    border: 10px;
-    border-color: blue;
+#container {
+    justify-content: center;
 }
 
 .cube {
-    border-style: solid;
-    height: auto;
-    min-height: 100%;
+    border: solid black 1px;
 }
 
 body {
     margin: 0;
+}
+
+#grid-window {
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
 }

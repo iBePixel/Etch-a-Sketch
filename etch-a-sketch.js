@@ -23,7 +23,11 @@ function createGrid(count){
     for (let i = 0; i < squares; i++){
         createDiv()
         div = document.getElementsByClassName("cube");
-        div[i].style.width = `calc(95% / ${count}`
+
+        let size = 1000 / count;
+
+        div[i].style.width = `${size}px`
+        div[i].style.height = `${size}px`
     }
     
     
