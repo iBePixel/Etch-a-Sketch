@@ -25,4 +25,4 @@ function createGrid(count){
     }
 }
 
-createDiv(16);
+createGrid(16);
