@@ -1,5 +1,5 @@
 
-const container = document.querySelector("#container");
+const container = document.querySelector("#grid-window");
 const cubes = document.querySelector('.cube');
 
 function createDiv(){
