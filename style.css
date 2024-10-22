@@ -24,3 +24,7 @@ body {
     width: 1000px;
     height: 1000px;
 }
+
+#newPad {
+    align-items: center;
+}
