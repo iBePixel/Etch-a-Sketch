@@ -1,5 +1,6 @@
 
 const container = document.querySelector("#grid-window");
+const redraw = document.querySelector("#newPad")
 
 
 function createDiv(){
