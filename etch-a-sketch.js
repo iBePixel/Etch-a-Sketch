@@ -29,7 +29,6 @@ function createGrid(count){
         div[i].style.width = `${size}px`
         div[i].style.height = `${size}px`
         div[i].addEventListener("mouseover", (e) => {
-            console.log(e);
             div[i].style.backgroundColor = "black";
         });
     }
