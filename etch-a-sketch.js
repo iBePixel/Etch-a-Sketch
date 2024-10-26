@@ -2,7 +2,6 @@
 const container = document.querySelector("#grid-window");
 const redraw = document.querySelector("#newPad")
 
-
 function createDiv(){
     let content = document.createElement("div");
     content.classList.add("cube");
@@ -37,6 +36,18 @@ function createGrid(count){
     
 }
 
+redraw.addEventListener('click', () => {
+    let newCount = prompt('Enter a number between 1 and 100', '16')
+    newCount = Number(newCount);
+    if (isNaN(newCount) ){
+        newCount = 100;
+    }
+    else if (newCount > 100){
+        newCount = 100;
+    }
+
+    createGrid(newCount)
+})
 
 
 createGrid(16);
