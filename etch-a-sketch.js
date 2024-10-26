@@ -25,9 +25,9 @@ function createGrid(count){
         div = document.getElementsByClassName("cube");
 
         let size = 1000 / count;
+        size = size - count / count;
 
-        div[i].style.width = `${size}px`
-        div[i].style.height = `${size}px`
+        div[i].style.flexBasis =  `${size}px`
         div[i].addEventListener("mouseover", (e) => {
             div[i].style.backgroundColor = "black";
         });
