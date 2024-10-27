@@ -23,9 +23,18 @@ body {
     justify-content: center;
     width: 1000px;
     height: 1000px;
+    border-style: solid;
 }
 
 #newPad {
     align-self: center;
     margin-bottom: 10px;
+}
+
+#userInteraction {
+    align-self: center;
+}
+
+#randomiseColours, #darkening {
+    display: inline-block
 }
