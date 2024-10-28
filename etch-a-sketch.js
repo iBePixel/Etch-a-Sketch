@@ -1,6 +1,7 @@
 
 const container = document.querySelector("#grid-window");
-const redraw = document.querySelector("#newPad")
+const redraw = document.querySelector("#newPad");
+const colourful = document.querySelector('#randomiseColours');
 
 function createDiv(){
     let content = document.createElement("div");
@@ -29,7 +30,12 @@ function createGrid(count){
 
         div[i].style.flexBasis =  `${size}px`
         div[i].addEventListener("mouseover", (e) => {
-            div[i].style.backgroundColor = "black";
+            if (colourful.checked == true ){
+                div[i].style.backgroundColor = "green";
+            }
+            else { 
+                div[i].style.backgroundColor = "black";
+            }
         });
     }
     
