@@ -31,7 +31,7 @@ function createGrid(count){
         div[i].style.flexBasis =  `${size}px`
         div[i].addEventListener("mouseover", (e) => {
             if (colourful.checked == true ){
-                div[i].style.backgroundColor = "green";
+                div[i].style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
             }
             else { 
                 div[i].style.backgroundColor = "black";
