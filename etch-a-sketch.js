@@ -46,6 +46,7 @@ function createGrid(count){
             }
             else if (colourful.checked == true){
                 div[i].style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+                div[i].style.opacity = '';
             }
             else if (shading.checked == true) {
                 div[i].style.backgroundColor = "black";
@@ -53,6 +54,7 @@ function createGrid(count){
             }
             else { 
                 div[i].style.backgroundColor = "black";
+                div[i].style.opacity = '';
             }
         });
     }
