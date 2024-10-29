@@ -12,11 +12,11 @@ function createDiv(){
 }
 
 function addShading(tile){
-    if (tile.style.opacity == undefined){
+    if (tile.style.opacity == ''){
         tile.style.opacity = 0.1
     }
     else if (tile.style.opacity < 1){
-        tile.style.opacity = parseFloat(element.style.opacity) + 0.1
+        tile.style.opacity = parseFloat(tile.style.opacity) + 0.1
     }
 }
 
@@ -48,6 +48,7 @@ function createGrid(count){
                 div[i].style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
             }
             else if (shading.checked == true) {
+                div[i].style.backgroundColor = "black";
                 addShading(div[i]);
             }
             else { 
