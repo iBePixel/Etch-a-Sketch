@@ -2,12 +2,22 @@
 const container = document.querySelector("#grid-window");
 const redraw = document.querySelector("#newPad");
 const colourful = document.querySelector('#randomiseColours');
+const shading = document.querySelector('#darkening')
 
 function createDiv(){
     let content = document.createElement("div");
     content.classList.add("cube");
 
     container.appendChild(content);
+}
+
+function addShading(tile){
+    if (tile.style.opacity == undefined){
+        tile.style.opacity = 0.1
+    }
+    else if (tile.style.opacity < 1){
+        tile.style.opacity = parseFloat(element.style.opacity) + 0.1
+    }
 }
 
 function createGrid(count){
@@ -30,8 +40,15 @@ function createGrid(count){
 
         div[i].style.flexBasis =  `${size}px`
         div[i].addEventListener("mouseover", (e) => {
-            if (colourful.checked == true ){
+            if (colourful.checked == true && shading.checked == true ){
+                addShading(div[i]);
                 div[i].style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            }
+            else if (colourful.checked == true){
+                div[i].style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            }
+            else if (shading.checked == true) {
+                addShading(div[i]);
             }
             else { 
                 div[i].style.backgroundColor = "black";
